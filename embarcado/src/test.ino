@@ -1,10 +1,10 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 
-#define wifi_ssid "ssid"
-#define wifi_password "password"
+#define wifi_ssid "ssid"  // wifi network name
+#define wifi_password "password"  
 
-#define mqtt_server "host/ip"
+#define mqtt_server "host/ip" // ip of the machine you are using
 #define mqtt_user "admin"
 #define mqtt_password "admin"
 
@@ -12,14 +12,14 @@
 // variables to the topic
 int valor lido = 0;
 float temp = 0;
-
+// setting the client 
 WiFiClient espClient;
 PubSubClient client(espClient);
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(115200); //initialize the seial of the board used in the work velocity
   setup_wifi();
-  client.setServer(mqtt_server, 1883);
+  client.setServer(mqtt_server, 1883);// setting the machine to became the server (machine ip , broker port)
   
 }
 
@@ -30,7 +30,7 @@ void setup_wifi() {
   Serial.print("Connecting to ");
   Serial.println(wifi_ssid);
   WiFi.begin(wifi_ssid, wifi_password);
-
+// in the case of failed conection this function will print points
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
@@ -60,7 +60,7 @@ void reconnect() {
     }
   }
 }
-
+// time counter
 long lastMsg = 0;
 int cont = 0;
 
