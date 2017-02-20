@@ -4,8 +4,10 @@ Contem o código do broker, os DockerFiles das imagens geradas, especificações
 
 * **Iniciando o container do broker** -  
 
+* **Diagrama da estrutura da rede MQTT** - 
 ![Diagrama da estrutura da rede MQTT](https://github.com/SmartClass-UFPA/MQTT/blob/master/images/Tree_Diagram_Topic_MQTT.jpg)
 
+* **Diagrama da estrutura da rede geral incluindo iteração MQTT** - 
 ![Diagrama da estrutura da rede geral incluindo iteração mqtt](https://github.com/SmartClass-UFPA/MQTT/blob/master/images/organiz.png)
 
 Vídeo para carregar a primeira versão da rede MQTT desenvolvida: https://www.youtube.com/watch?v=J6kNOq1aLa0
