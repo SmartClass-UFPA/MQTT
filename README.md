@@ -10,4 +10,8 @@ Vídeo para carregar a primeira versão da rede MQTT desenvolvida: https://www.y
 * **Diagrama da estrutura da rede geral incluindo iteração MQTT** - 
 ![Diagrama da estrutura da rede geral incluindo iteração mqtt](https://github.com/SmartClass-UFPA/MQTT/blob/master/images/organiz.png)
 
+# Documentação e como você pode cooperar com o projeto
 
+* [Documentação](https://docs.google.com/document/d/1HNaHX7NWl0ZyB-UDfRufeYhOph3cZsX3MOjD3xcBsZ8/edit?usp=sharing)
+* Para cooperar com o projeto
+  * Os arquivos editáveis são : ...; ...; 
