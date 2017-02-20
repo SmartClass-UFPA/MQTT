@@ -1,0 +1,15 @@
+public static final String TOPIC_TEMPERATURA = "UFPA/Belem/Proficional/Itec/Bloco novo/A2/Comunicação/temperatura";
+
+  if (valor Lido >= 25) {
+    client.publish('temperatura', 'Ligar ar condicionado');
+ }
+
+ 
+     private void publishTemperatura() throws MqttException {                    /*n sei se isso faz sentido aqui
+         final MqttTopic temperaturaTopic = client.getTopic(TOPIC_TEMPERATURA);   vi que era tratamento de excecao*/
+ 
+         final int temperaturaNumber = Utils.createRandomNumberBetween(20, 30);
+         final String temperature = temperaturaNumber + "°C";
+ 
+         temperaturaTopic.publish(new MqttMessage(temperature.getBytes()));
+     }
