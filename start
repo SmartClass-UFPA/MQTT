@@ -1,0 +1,6 @@
+#!/bin/bash
+#docker network create smartclass;
+docker run --name mongo-broker -d mongo;
+sleep 10
+docker run --name broker-node --link mongo-broker:mongo -p 1883:1883 brunoscherer/mqtt-node:latest;
+sleep 10
